@@ -35,6 +35,6 @@ public class Block : MonoBehaviour
     private void OnDestroy()
     {
         GameObject.Find("World Generator").GetComponent<WorldGenerator>().blocks.Remove(this.transform.position);
-        Instantiate(Resources.Load<GameObject>("p_breakEffect"), this.transform.position, Quaternion.identity);
+        Instantiate(Resources.Load<GameObject>("fx_breakEffect"), this.transform.position, Quaternion.identity);
     }
 }

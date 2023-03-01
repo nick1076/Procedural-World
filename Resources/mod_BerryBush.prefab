@@ -1079,7 +1079,7 @@ GameObject:
   - component: {fileID: 1285675276893910138}
   - component: {fileID: 8607774282034216307}
   m_Layer: 0
-  m_Name: p_BerryBush
+  m_Name: mod_BerryBush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
