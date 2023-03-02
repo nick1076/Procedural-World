@@ -1077,7 +1077,6 @@ GameObject:
   - component: {fileID: 3361511594912935487}
   - component: {fileID: 8067338234909645429}
   - component: {fileID: 1285675276893910138}
-  - component: {fileID: 8607774282034216307}
   m_Layer: 0
   m_Name: mod_BerryBush
   m_TagString: Untagged
@@ -1115,18 +1114,6 @@ BoxCollider:
   m_Size: {x: 0.54984, y: 0.54984, z: 0.54984}
   m_Center: {x: 0, y: -0.095, z: 0}
 --- !u!114 &1285675276893910138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3361511594912935480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f1bee9c634302546a2b8d4b84d64d3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8607774282034216307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
