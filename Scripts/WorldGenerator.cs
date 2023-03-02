@@ -11,10 +11,12 @@ public class WorldGenerator : MonoBehaviour
     public int yDepth;
 
     public int propChance = 25;
+    public int oreChance = 10;
 
     public Material grassMaterial;
     public Material dirtMaterial;
     public Material stoneMaterial;
+    public Material ironMaterial;
 
     public Dictionary<Vector3, Block> blocks = new Dictionary<Vector3, Block>();
 
@@ -69,7 +71,16 @@ public class WorldGenerator : MonoBehaviour
 
                     if (depth + 2 < topBlockPosition)
                     {
-                        objD.GetComponent<Renderer>().material = stoneMaterial;
+                        int ore = UnityEngine.Random.Range(0, oreChance + 1);
+
+                        if (ore == oreChance)
+                        {
+                            objD.GetComponent<Renderer>().material = ironMaterial;
+                        }
+                        else
+                        {
+                            objD.GetComponent<Renderer>().material = stoneMaterial;
+                        }
                     }
                     else
                     {

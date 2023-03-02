@@ -4326,7 +4326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5
+  m_text: 11
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4783,7 +4783,7 @@ MonoBehaviour:
   m_MinValue: 1
   m_MaxValue: 20
   m_WholeNumbers: 1
-  m_Value: 5
+  m_Value: 11
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -4983,7 +4983,7 @@ Camera:
   far clip plane: 1000
   field of view: 50.53402
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 11
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5015,14 +5015,17 @@ MonoBehaviour:
   yScale: 10
   zScale: 16
   yDepth: 0
-  propChance: 30
+  propChance: 20
+  oreChance: 10
   grassMaterial: {fileID: 2100000, guid: 755000feaf2932949a43cc3e82ad6804, type: 2}
   dirtMaterial: {fileID: 2100000, guid: fd635ce26226f9c4b9d9711222068f2d, type: 2}
   stoneMaterial: {fileID: 2100000, guid: f839d0bc162cb0c4296156fe41337921, type: 2}
+  ironMaterial: {fileID: 2100000, guid: 870db915121bef0478d1d3f4d70b919a, type: 2}
   props:
-  - {fileID: 3361511594912935480, guid: 792f439f254a6fb4b9fb130242186c8e, type: 3}
-  - {fileID: 3361511594912935480, guid: 792f439f254a6fb4b9fb130242186c8e, type: 3}
+  - {fileID: 8217817916666753867, guid: 60a61908dfa6aae4b88084e201f341c7, type: 3}
   - {fileID: 5709489910698579942, guid: b06e6bf55d05feb4fa67eeb3ee25d1ba, type: 3}
+  - {fileID: 3268285156915634400, guid: 031381d1b6b828e48ae7943f693b5d5a, type: 3}
+  - {fileID: 3268285156915634400, guid: 031381d1b6b828e48ae7943f693b5d5a, type: 3}
 --- !u!220 &7258386062516984218
 LightProbeGroup:
   m_ObjectHideFlags: 0
