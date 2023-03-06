@@ -6,6 +6,8 @@ using UnityEngine;
 public class BlockType : ScriptableObject
 {
     public string blockName;
-    public Material blockMaterial;
     public GameObject blockModel;
+    public bool transparent;
+
+    public List<Material> blockFaceMaterials = new List<Material>();
 }

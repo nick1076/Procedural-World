@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f327f46a0343d40a1b01589e1149bc, type: 3}
+  m_Name: biome_forest
+  m_EditorClassIdentifier: 
+  surfaceBlock: {fileID: 11400000, guid: e62162658ac1c3a498f40a958bbfe646, type: 2}
+  subSufaceBlock: {fileID: 11400000, guid: d05cc8402b2f29a44bfb49def74dcfaa, type: 2}
+  undergroundBlock: {fileID: 11400000, guid: 3b1f74dffa6d63e42867cc48a20d9d87, type: 2}
+  ore: {fileID: 11400000, guid: 186dfc7b991a66942abe12a0dbe1300c, type: 2}
+  oreChance: 25
+  structureChance: 10
+  biomeHeightScale: 1
+  structures:
+  - {fileID: 5709489910698579942, guid: b06e6bf55d05feb4fa67eeb3ee25d1ba, type: 3}
+  - {fileID: 3268285156915634400, guid: 031381d1b6b828e48ae7943f693b5d5a, type: 3}
+  - {fileID: 8217817916666753867, guid: 60a61908dfa6aae4b88084e201f341c7, type: 3}

@@ -5,31 +5,29 @@ using UnityEngine;
 public class WorldGenerator : MonoBehaviour
 {
 
+    public GameObject blockModel;
+    public BiomeData biome;
+
     public int xScale;
     public int yScale;
     public int zScale;
     public int yDepth;
 
-    public int propChance = 25;
-    public int oreChance = 10;
-
-    public Material grassMaterial;
-    public Material dirtMaterial;
-    public Material stoneMaterial;
-    public Material ironMaterial;
-
     public Dictionary<Vector3, Block> blocks = new Dictionary<Vector3, Block>();
 
     GameObject prevParent;
 
-    public GameObject[] props;
-
     void Start()
     {
-        Generate();
+        Generate(biome, this.transform, xScale, yScale, zScale);
     }
 
-    public void Generate()
+    public void ReGenerate()
+    {
+        Generate(biome, this.transform, xScale, yScale, zScale);
+    }
+
+    public void Generate(BiomeData b, Transform origin, int xS, int yS, int zS)
     {
         blocks.Clear();
         int seed = UnityEngine.Random.Range(0, 100000000);
@@ -44,53 +42,56 @@ public class WorldGenerator : MonoBehaviour
         {
             for (int z = -(zScale / 2); z < (zScale / 2) + 1; z++)
             {
-                int topBlockPosition = (int)(Mathf.Round(Mathf.PerlinNoise((float)(x + seed) * .156853f, (float)(z + seed) * .156853f) * yScale) - 1);
+                int topBlockPosition = (int)(Mathf.Round(Mathf.PerlinNoise((float)(x + seed) * .156853f, (float)(z + seed) * .156853f) * yScale * b.biomeHeightScale) - 1);
                 
                 if (topBlockPosition <= yDepth)
                 {
                     topBlockPosition = yDepth + 1;
                 }
 
-                GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                GameObject obj = Instantiate(blockModel);
                 obj.transform.position = new Vector3(x, topBlockPosition, z);
-                obj.GetComponent<Renderer>().material = grassMaterial;
-                obj.AddComponent<Block>();
+                obj.GetComponent<Block>().Initialize(b.surfaceBlock);
                 obj.transform.parent = parent.transform;
 
-                int topper = UnityEngine.Random.Range(0, propChance + 1);
+                int topper = UnityEngine.Random.Range(0, b.structureChance + 1);
 
-                if (topper == propChance)
+                if (topper == b.structureChance)
                 {
-                    Instantiate(props[UnityEngine.Random.Range(0, props.Length)], new Vector3(x, topBlockPosition + 1, z), Quaternion.identity, parent.transform);
+                    Instantiate(b.structures[UnityEngine.Random.Range(0, b.structures.Count)], new Vector3(x, topBlockPosition + 1, z), Quaternion.identity, parent.transform);
                 }
 
                 for (int depth = topBlockPosition - 1; depth > yDepth; depth--)
                 {
-                    GameObject objD = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                    GameObject objD = Instantiate(blockModel);
                     objD.transform.position = new Vector3(x, depth, z);
 
                     if (depth + 2 < topBlockPosition)
                     {
-                        int ore = UnityEngine.Random.Range(0, oreChance + 1);
+                        int ore = UnityEngine.Random.Range(0, b.oreChance + 1);
 
-                        if (ore == oreChance)
+                        if (ore == b.oreChance)
                         {
-                            objD.GetComponent<Renderer>().material = ironMaterial;
+                            objD.GetComponent<Block>().Initialize(b.ore);
                         }
                         else
                         {
-                            objD.GetComponent<Renderer>().material = stoneMaterial;
+                            objD.GetComponent<Block>().Initialize(b.undergroundBlock);
                         }
                     }
                     else
                     {
-                        objD.GetComponent<Renderer>().material = dirtMaterial;
+                        objD.GetComponent<Block>().Initialize(b.subSufaceBlock);
                     }
 
-                    objD.AddComponent<Block>();
                     objD.transform.parent = parent.transform;
                 }
             }
+        }
+
+        foreach (Block blockObj in blocks.Values)
+        {
+            blockObj.ReRender(this);
         }
     }
 }

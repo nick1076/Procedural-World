@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 4843501064254494290}
   - component: {fileID: 8459298570920464167}
   - component: {fileID: 2738020440063260835}
+  - component: {fileID: 2587258182663362929}
   m_Layer: 0
   m_Name: mod_flower
   m_TagString: Untagged
@@ -293,8 +294,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.25, y: 0.5510864, z: 0.25}
+  m_Center: {x: 0, y: -0.22445679, z: 0}
 --- !u!114 &2738020440063260835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,6 +306,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f1bee9c634302546a2b8d4b84d64d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block: {fileID: 11400000, guid: 500f5f96e7ef16a4aa2158cdaf74e735, type: 2}
+  faceSouth: {fileID: 0}
+  faceNorth: {fileID: 0}
+  faceEast: {fileID: 0}
+  faceWest: {fileID: 0}
+  faceTop: {fileID: 0}
+  faceBottom: {fileID: 0}
+--- !u!114 &2587258182663362929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217817916666753867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee299538c82b7f43badb3c584758f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8815414012396280124

@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 2046700608739460601}
   - component: {fileID: 3041533838998068364}
   - component: {fileID: 8840463569819200264}
+  - component: {fileID: 3091130912502674878}
   m_Layer: 0
   m_Name: mod_grass
   m_TagString: Untagged
@@ -129,8 +130,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.6, y: 0.6277466, z: 0.6}
+  m_Center: {x: 0, y: -0.18612671, z: 0.004524231}
 --- !u!114 &8840463569819200264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +142,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f1bee9c634302546a2b8d4b84d64d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block: {fileID: 11400000, guid: 67857af10ceab1441b9ef602c0dc01bf, type: 2}
+  faceSouth: {fileID: 0}
+  faceNorth: {fileID: 0}
+  faceEast: {fileID: 0}
+  faceWest: {fileID: 0}
+  faceTop: {fileID: 0}
+  faceBottom: {fileID: 0}
+--- !u!114 &3091130912502674878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3268285156915634400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee299538c82b7f43badb3c584758f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4390335099242721295

@@ -15,3 +15,5 @@ MonoBehaviour:
   blockName: Grass Block
   blockMaterial: {fileID: 2100000, guid: 755000feaf2932949a43cc3e82ad6804, type: 2}
   blockModel: {fileID: 0}
+  blockFaceMaterials:
+  - {fileID: 2100000, guid: 755000feaf2932949a43cc3e82ad6804, type: 2}
