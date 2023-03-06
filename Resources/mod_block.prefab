@@ -91,7 +91,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856598163611691274}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b01d6b19c9c86c349bb33334af43d385, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 6658157145277944412}
   - component: {fileID: 2496201857107013232}
   - component: {fileID: 4971158298100418483}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217785913950474726}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b01d6b19c9c86c349bb33334af43d385, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -367,7 +367,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2968332769617901946}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b01d6b19c9c86c349bb33334af43d385, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -477,7 +477,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3296485847302024286}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b01d6b19c9c86c349bb33334af43d385, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -587,7 +587,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5027987602678261050}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b01d6b19c9c86c349bb33334af43d385, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -697,7 +697,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8985615751186578322}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b01d6b19c9c86c349bb33334af43d385, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
