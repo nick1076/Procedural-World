@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: blockFol_grass
   m_EditorClassIdentifier: 
   blockName: Grass
-  blockModel: {fileID: 0}
+  blockModel: {fileID: 3268285156915634400, guid: 031381d1b6b828e48ae7943f693b5d5a, type: 3}
+  blockIcon: {fileID: 21300000, guid: 01da0a6310196a54885c4ee3dd4063f1, type: 3}
   transparent: 1
   blockFaceMaterials:
   - {fileID: 2100000, guid: 1ecbca68f87f35544b945bd57e0627c5, type: 2}

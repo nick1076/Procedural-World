@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: blockWood
   m_EditorClassIdentifier: 
   blockName: Wood Block
-  blockMaterial: {fileID: 2100000, guid: 3c50a84d6f704c94083076e498a277d7, type: 2}
   blockModel: {fileID: 0}
+  transparent: 0
   blockFaceMaterials:
-  - {fileID: 2100000, guid: fd635ce26226f9c4b9d9711222068f2d, type: 2}
+  - {fileID: 2100000, guid: 3c50a84d6f704c94083076e498a277d7, type: 2}

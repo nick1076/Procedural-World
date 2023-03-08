@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: blockDirt
   m_EditorClassIdentifier: 
   blockName: Dirt Block
-  blockMaterial: {fileID: 2100000, guid: fd635ce26226f9c4b9d9711222068f2d, type: 2}
   blockModel: {fileID: 0}
+  transparent: 0
   blockFaceMaterials:
   - {fileID: 2100000, guid: fd635ce26226f9c4b9d9711222068f2d, type: 2}

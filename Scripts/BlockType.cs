@@ -7,6 +7,7 @@ public class BlockType : ScriptableObject
 {
     public string blockName;
     public GameObject blockModel;
+    public Sprite blockIcon;
     public bool transparent;
 
     public List<Material> blockFaceMaterials = new List<Material>();

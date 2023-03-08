@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: blockFol_flower
   m_EditorClassIdentifier: 
   blockName: Flower Block
-  blockModel: {fileID: 0}
+  blockModel: {fileID: 8217817916666753867, guid: 60a61908dfa6aae4b88084e201f341c7, type: 3}
+  blockIcon: {fileID: 21300000, guid: 53c8d7a79104b9d4397299d0f43a1744, type: 3}
   transparent: 1
   blockFaceMaterials:
   - {fileID: 2100000, guid: 1ecbca68f87f35544b945bd57e0627c5, type: 2}

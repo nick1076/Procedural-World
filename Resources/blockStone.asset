@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: blockStone
   m_EditorClassIdentifier: 
   blockName: Stone Block
-  blockMaterial: {fileID: 2100000, guid: f839d0bc162cb0c4296156fe41337921, type: 2}
   blockModel: {fileID: 0}
+  transparent: 0
   blockFaceMaterials:
   - {fileID: 2100000, guid: f839d0bc162cb0c4296156fe41337921, type: 2}
