@@ -61,7 +61,7 @@ public class BlockFace : MonoBehaviour
                 blockLocat.z += 1;
             }
 
-            BlockType toBuild = GameObject.Find("Player").GetComponent<InventoryManager>().blocksAvaliable[GameObject.Find("Player").GetComponent<InventoryManager>().index];
+            BlockType toBuild = GameObject.Find("Managers").GetComponent<InventoryManager>().blocksAvaliable[GameObject.Find("Managers").GetComponent<InventoryManager>().index];
 
             if (toBuild.blockModel != null)
             {

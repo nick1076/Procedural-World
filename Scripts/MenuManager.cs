@@ -18,6 +18,69 @@ public class MenuManager : MonoBehaviour
     public TMP_InputField inputFieldZScale;
     public WorldGenerator objectWorldGenerator;
 
+    public GameObject[] generationMenuObjects;
+    public GameObject[] firstPersonObjects;
+    public GameObject playerObject;
+    bool inFirstPerson = false;
+
+    private void Start()
+    {
+        ToggleMode(0);
+    }
+
+    public void ToggleMode(int id)
+    {
+        if (id == 0)
+        {
+            inFirstPerson = false;
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            foreach (GameObject obj in firstPersonObjects)
+            {
+                obj.SetActive(false);
+            }
+            foreach (GameObject obj in generationMenuObjects)
+            {
+                obj.SetActive(true);
+            }
+        }
+        else if (id == 1)
+        {
+            inFirstPerson = true;
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+            playerObject.transform.position = new Vector3(0, 10, 0);
+
+            foreach (GameObject obj in generationMenuObjects)
+            {
+                obj.SetActive(false);
+            }
+            foreach (GameObject obj in firstPersonObjects)
+            {
+                obj.SetActive(true);
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            if (inFirstPerson)
+            {
+                ToggleMode(0);
+            }
+            else
+            {
+                ToggleMode(1);
+            }
+        }
+    }
+
     public void SetUIElement(int id)
     {
         /*
